@@ -86,8 +86,8 @@ from tensorflow.keras.layers import (
     Embedding,
     ZeroPadding2D,
 )
-from keras.layers.advanced_activations import LeakyReLU
-from keras.layers.convolutional import UpSampling2D, Conv2D
+from keras.layers import LeakyReLU
+from keras.layers import UpSampling2D, Conv2D
 from keras.models import Sequential, Model
 
 from tensorflow.keras.optimizers import Adam
@@ -178,7 +178,6 @@ from rl.agents.dqn import DQNAgent
 from rl.agents.sarsa import SarsaAgent
 from rl.policy import BoltzmannQPolicy
 from rl.memory import SequentialMemory
-
 
 TEST_MODEL = 0
 SHOW_TIME = 1
